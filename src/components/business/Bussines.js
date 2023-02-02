@@ -92,7 +92,7 @@ export const Bussines = () => {
                             onChange={myFormik.handleChange}
                             onBlur={myFormik.handleBlur}
                             type="text"
-                            placeholder="First name"
+                            placeholder=""
 
                         />
                         {
@@ -110,7 +110,7 @@ export const Bussines = () => {
                             onChange={myFormik.handleChange}
                             onBlur={myFormik.handleBlur}
                             type="number"
-                            placeholder="Last name"
+                            placeholder=""
                             defaultValue="Otto"
                         />
                         {

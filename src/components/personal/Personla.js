@@ -81,7 +81,7 @@ export const Personla = () => {
             <Form onSubmit={myFormik.handleSubmit}>
                 <Row className=''>
 
-                    {/* <div className='col-lg-8'> */}
+
 
                     <Form.Group as={Col} md="5" className='mb-3'>
                         <Form.Label>Detailes</Form.Label>
@@ -91,7 +91,7 @@ export const Personla = () => {
                             onChange={myFormik.handleChange}
                             onBlur={myFormik.handleBlur}
                             type="text"
-                            placeholder="First name"
+                            placeholder=""
 
                         />
                         {
@@ -109,7 +109,7 @@ export const Personla = () => {
                             onChange={myFormik.handleChange}
                             onBlur={myFormik.handleBlur}
                             type="number"
-                            placeholder="Last name"
+                            placeholder=""
                             defaultValue="Otto"
                         />
 
