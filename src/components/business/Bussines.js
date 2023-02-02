@@ -178,7 +178,7 @@ export const Bussines = () => {
                     })
                 }
                 <div>
-                    <h1 >Total:$ {total}</h1>
+                    {/* <h1 >Total:$ {total}</h1> */}
                 </div>
             </table>
             <h4></h4>
