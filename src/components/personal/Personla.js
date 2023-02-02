@@ -26,7 +26,7 @@ export const Personla = () => {
     }
 
     const getuser = async () => {
-        const user = await axios.get(`http://localhost:7000/personal`)
+        const user = await axios.get(`https://moneymangment.onrender.com/personal`)
         setuser(user.data.user)
         // settotal(+ total)
         // settotal(user.data.user)
@@ -47,7 +47,7 @@ export const Personla = () => {
 
         let conform = window.confirm("are you sure you want to delete ")
         if (conform) {
-            await axios.delete(`http://localhost:7000/personal/${id._id}`)
+            await axios.delete(`https://moneymangment.onrender.com/personal/${id._id}`)
             settotal(total - parseInt(id.money))
         }
         getuser()
@@ -72,7 +72,7 @@ export const Personla = () => {
             return err
         },
         onSubmit: async (values) => {
-            let res = await axios.post("http://localhost:7000/personal", values)
+            let res = await axios.post("https://moneymangment.onrender.com/personal", values)
         }
     })
     return (

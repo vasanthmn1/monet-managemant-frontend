@@ -18,7 +18,7 @@ export const PersonalEdit = () => {
 
     const Getusers = async () => {
         try {
-            let get = await axios.get(`http://localhost:7000/personal/${porms.id}`)
+            let get = await axios.get(`https://moneymangment.onrender.com/personal/${porms.id}`)
             myFormik.setValues(get.data.products)
             console.log(get.data.products);
 
@@ -45,7 +45,7 @@ export const PersonalEdit = () => {
             return err
         },
         onSubmit: async (values) => {
-            let res = await axios.put(`http://localhost:7000/personal/${porms.id}`, values)
+            let res = await axios.put(`https://moneymangment.onrender.com/personal/${porms.id}`, values)
             naveget("/personal")
             setloding(true)
         }

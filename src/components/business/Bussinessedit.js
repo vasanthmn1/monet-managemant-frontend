@@ -18,7 +18,7 @@ export const Bussinessedit = () => {
 
     const Getusers = async () => {
         try {
-            let get = await axios.get(`http://localhost:7000/business/${porms.id}`)
+            let get = await axios.get(`https://moneymangment.onrender.com/business/${porms.id}`)
             myFormik.setValues(get.data.products)
             console.log(get.data.products);
 
@@ -45,7 +45,7 @@ export const Bussinessedit = () => {
             return err
         },
         onSubmit: async (values) => {
-            let res = await axios.put(`http://localhost:7000/business/${porms.id}`, values)
+            let res = await axios.put(`https://moneymangment.onrender.com/business/${porms.id}`, values)
             naveget("/bussines")
             setloding(true)
         }

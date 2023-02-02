@@ -25,7 +25,7 @@ export const Bussines = () => {
 
 
     const getuser = async () => {
-        const user = await axios.get(`http://localhost:7000/business`)
+        const user = await axios.get(`https://moneymangment.onrender.com/business`)
         setuser(user.data.user)
 
     }
@@ -41,7 +41,7 @@ export const Bussines = () => {
 
         let conform = window.confirm("are you sure you want to delete ")
         if (conform) {
-            await axios.delete(`http://localhost:7000/business/${id._id}`)
+            await axios.delete(`https://moneymangment.onrender.com/business/${id._id}`)
             settotal(total - parseInt(id.money))
         }
 
@@ -71,7 +71,7 @@ export const Bussines = () => {
             return err
         },
         onSubmit: async (values) => {
-            let res = await axios.post("http://localhost:7000/business", values)
+            let res = await axios.post("https://moneymangment.onrender.com/business", values)
 
         }
     })
