@@ -35,7 +35,7 @@ export const Bussinessedit = () => {
         validate: (values) => {
             let err = {}
             if (!values.task) {
-                err.task = "Enter Today Name"
+                err.task = "Enter value"
             } else if (values.task.length < 4) {
                 err.task = "Maximam Four Letter"
             }
@@ -67,7 +67,7 @@ export const Bussinessedit = () => {
                                 onChange={myFormik.handleChange}
                                 onBlur={myFormik.handleBlur}
                                 type="text"
-                                placeholder="First name"
+                                placeholder=""
 
                             />
                             {
@@ -85,7 +85,7 @@ export const Bussinessedit = () => {
                                 onChange={myFormik.handleChange}
                                 onBlur={myFormik.handleBlur}
                                 type="number"
-                                placeholder="Last name"
+                                placeholder=""
                                 defaultValue="Otto"
                             />
 
